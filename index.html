@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>My Dashboard</h1>
+    <button class="theme-button" id="themeButton">Toggle Theme</button>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h2>Responsive Design Tokens & Mobile-First CSS Architecture</h2>
+      <p>Designed for mobile, tablet and desktop screens.</p>
+    </section>
+
+    <section class="dashboard">
+      <article class="card">
+        <h3>Total Users</h3>
+        <p class="value">1,250</p>
+        <p>Users registered</p>
+      </article>
+
+      <article class="card">
+        <h3>Revenue</h3>
+        <p class="value">₹45,000</p>
+        <p>Monthly revenue</p>
+      </article>
+
+      <article class="card">
+        <h3>Projects</h3>
+        <p class="value">24</p>
+        <p>Active projects</p>
+      </article>
+
+      <article class="card">
+        <h3>Performance</h3>
+        <p class="value">92%</p>
+        <p>Overall score</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Responsive Dashboard Demo
+  </footer>
+
+  <script>
+    const button = document.getElementById("themeButton");
+
+    button.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
